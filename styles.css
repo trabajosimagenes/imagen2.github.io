@@ -2,14 +2,17 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow: hidden; /* Evita el desplazamiento */
+   ; /* Evita el desplazamiento */
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column; /* Coloca las imágenes una debajo de otra */
+    height: 100%; /* Ocupa toda la altura de la ventana */
 }
 
 .full-screen-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    width: 100%; /* Ancho completo */
+    height: 100vh; /* Altura completa de la ventana */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
 }
